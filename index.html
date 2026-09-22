@@ -1,0 +1,74 @@
+<DOCTYPE html>
+  <html>
+    <head>
+        <title>Student Portal</title>
+
+        <Style>
+            body {
+               background: #111;
+               color: white;
+               font-family: Arial;
+               display: flex;
+               justifycontent: center;
+               align-items: center;
+               height: 100vh;
+               margin:0;
+               
+            }
+
+          .login-box  {
+              background: #222;
+              padding: 30px;
+              width: 280px;
+              border-radius: 15px;
+              text-align: center;
+          }
+
+          input  {
+             width: 90%;
+            padding: 30px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+          }
+
+          button  {
+            width: 97%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+        </Style>
+    </head>
+
+<body> 
+
+          <div class="login-box">
+               <h2>STUDENT PORTAL</h2>
+
+               <input type="text" id="username"
+          placeholder="username">
+
+               <input type="password" id="password"
+          placeholder="password">
+
+                <button onclick="login()">Login<button>
+            </div>
+
+            <script>
+                function login() {
+                  let username = document.getElementbyId("username").value;
+                  let password = document.getElementById("password").value;
+
+         if (username=== "Bainess" && password "1234") {
+                    window.location.href = "dashboard.html";
+         }
+                  else { alert("Wrong username or password")
+                   }
+                }
+          </script>
+
+          </body>
+  </html>
